@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Typing Test </title>
+    <link
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1004px-Google_%22G%22_Logo.svg.png">
+</head>
+
+<div align="center">
+
+    <body>
+        <h1>My First Web Page</h1>
+        <p>This is the html refresher, it's only the bare bones for now</p>
+        <p>Host this bad boy <a href="https://pages.github.com/">here</a> or <a href="https://www.heroku.com/">here</a>
+        </p>
+        <button id="color">Change color!</button>
+        <p></p>
+        <img id="myPic" src="images/Annotation 2020-01-19 193149.jpg" style="border:5px solid rgb(111, 81, 122)">
+    </body>
+</div>
+
+<script>
+    document.getElementById('color').onclick = changeColor;
+    var currentColor = "black";
+
+    function changeColor() {
+        if (currentColor == "red") {
+            document.body.style.color = "black";
+            document.body.style.background="white";
+            document.getElementById("myPic").src = "images/Annotation 2020-01-19 193149.jpg";
+            currentColor = "black";
+        } else {
+            document.body.style.color = "white";
+            document.getElementById("myPic").src = "images/main_pic_v2.jpg";
+            document.body.style.background="black";
+            currentColor = "red";
+        }
+        return currentColor;
+    }
+
+</script>
+
+</html>
