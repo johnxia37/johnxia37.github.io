@@ -15,5 +15,3 @@ function changeColor() {
     }
     return currentColor;
 }
-
-alert(5+6);
