@@ -10,3 +10,9 @@ h3{
 p{
     padding: 0px;
 }
+.standout {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding: 0px;
+}
