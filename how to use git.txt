@@ -1,0 +1,52 @@
+//How to use git
+
+
+1. 
+navigate to working directory by using
+	cd /foldername/
+or
+	cd ..
+2.
+then create a local git repository
+	git init
+3.
+stage files into repository with
+	git add .
+	git add filename.type
+	git add *.type
+4.
+check status of the files commited with
+	git status
+5.
+all green then commit the staged files to the repository with comments
+	git commit -m "comments"
+6.
+relate local repository to remote online one ie. github
+	git remote add origin url
+	git remote add origin https:/github.com/username/project.git
+	git remote set-url origin url
+7.
+add files to remote repository
+	git push -u origin master
+0.
+to remove items from the scope of the local git repository use
+	touch .gitignore
+then edit this file with each line either a dir or file name
+
+0.
+to actually delete files from the repository use
+	git rm filename
+
+0.
+create branches, which allow commits to not interfer with the master
+	git branch branchname
+	git checkout branchname
+then merge branches once changes need to be included
+	gitmerge
+then delete branch if one time use
+	git branch -d branchname
+
+git clone url
+
+11.
+always git pull first to ensure local repository is up to date before making any changes

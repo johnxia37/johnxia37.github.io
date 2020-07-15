@@ -1,6 +1,6 @@
-document.getElementById('color').onclick = changeColor;
 var currentColor = "black";
 
+document.getElementById('color').onclick = changeColor;
 function changeColor() {
     if (currentColor == "red") {
         document.body.style.color = "black";
